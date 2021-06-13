@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ThomasWalsh</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <script src="app.js"></script>
+    
+    
+    <h1>Thomas Walsh</h1>
+    <div class='bio'>
+        <br>
+        Msc. Software Design and Development, 
+        <br>
+        B.A. Information Technology & Geography
+       <br>
+       Age: 22 &ensp; Location: Galway, Ireland. 
+       <br> <br>
+       Software Developer with knowledge of  and experience with working with:
+       <br> Java, C#, Phython, Javascript, CSS, HTML, MySQL, and PHP.
+
+       <br> <br>
+       Email: tjw5898@gmail.com 
+       <br> LinkedIn:<a href="https://www.linkedin.com/in/thomaswalsh5898/"> linkedin.com/in/thomaswalsh5898</a> 
+       <br> GitHub: <a href="https://github.com/ThomasWalsh98">ThomasWalsh98</a>
+
+    </div>
+    <div class='buttons'>
+        <p>
+            <a href="Projects.html">
+                <button class='button' type="button">Projects</button>
+            </a>    
+        </p>
+        
+        <p>
+            <a href="Cv.html">
+                <button class='button' type="button">CV</button>
+            </a>
+        </p>
+
+    </div>
+
+    
+
+    </div>
+
+    <section>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+        <div class='design'></div>
+    </section>
+
+    
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    
+
+    <script>
+
+
+        let tl = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 750
+        })
+        
+
+        tl.add({
+            targets: 'section div.design',
+            width: '100%',
+            backgroundColor: 'rgb(197,197,255)',
+            delay: anime.stagger(100)
+        })
+        
+
+        tl.add({
+            targets: 'section div.design',
+            width: '90%',
+            backgroundColor: 'rgb(135, 206, 235)'
+        })
+
+        tl.add({
+            targets: 'h1', 
+            top:'15%',
+            opacity: 1,
+            duration: 4000
+        }, '-=1600')
+
+        tl.add({
+            targets: 'div.bio', 
+            top:'40%',
+            opacity: .8,
+            duration: 4000
+        }, '-=1800')
+
+        
+
+        let rotateMe = anime({
+            targets: 'section',
+            scaleY: '2',
+            scaleX: '2',
+            translateX: '40%',
+            rotate:'45deg',
+            duration: 5000,
+            autoplay: false
+        })
+
+        let showButtons = anime({
+            targets: 'div.buttons',
+            top:'30%',
+            opacity: 1,
+            duration: 4000,
+            autoplay: false
+        })
+
+        document.querySelector('.bio').addEventListener('mouseover', () => {
+            rotateMe.play();
+            showButtons.play();
+        })
+
+        
+
+
+    </script>
+
+</body>
+</html>
