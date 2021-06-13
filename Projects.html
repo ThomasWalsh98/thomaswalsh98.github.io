@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    
+    <title>Projects_ThomasWalsh</title>
+    <link rel="stylesheet" href="css/otherPages.css">
+</head>
+<body>
+    
+    <nav>
+        <div class='hamburger'>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Index.html">Thomas Walsh</a></li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Cv.html">CV</a></li>
+            <li> <button id="myBtn">Contact</button></li>
+        </ul>
+    </nav>
+
+    <div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please do not hesitate to get in contact.</p>
+        <p>
+            Email: tjw5898@gmail.com
+            <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/thomaswalsh5898/"> linkedin.com/in/thomaswalsh5898</a>
+            <br>
+            GitHub: <a href="https://github.com/ThomasWalsh98">ThomasWalsh98</a>
+        </p>
+    </div>
+
+    </div>
+
+    <section class="writing">
+        
+        <h1>Projects</h1>
+        During my time at university, I have completed modules in the following topics:
+        <ul class="modules">
+            <li>Databases</li>
+            <li>Software Engineering</li>
+            <li>Object Orientated Software Design and Development</li>
+            <li>Algorithmics and Logical Methods</li>
+            <li>Computing Architecture and Operating Systems</li>
+            <li>Internet Programming</li>
+            <li>Object Orientated Programming - Java</li>
+            <li>Computer Networks and Data Collection</li>
+            <li>Enterprise Java Programming</li>
+            <li>Human Computer Interaction</li>
+            <li>Humanities Applications</li>
+            <li>Multi-Media Development</li>
+          </ul>
+
+          
+          These modules resulted in me achieving knowldege in Java, Python and C#. Experience using maven and JSON data was also attained.
+          <br> Web developing lessons thought me how to use HTML,CSS, JavaScript and RestApis. Node.js and mongoDB were also experienced. Frameworks such as jQuery, Bootstrap and anime.js helped design web pages. PHP was learnt to complete a group project.
+          <br> I have gained the skills required to analyse, manipulate and work with databases with mySQL.
+          <br> The networks module has given me an ability to carry out Linux operations and create and run bash scripts.
+
+          <h2>Master’s Thesis: Vault Venture Video Game.</h2>
+          As part of my postgraduate studies, I research video game developemnt and wrote a thesis about the impact of
+          dynamic game balancing in video games. To test the hypothesis that dynamic game balancing improves the player's gaming experience
+          by matching their ability to the game's difficulty setting, I fully developed a 3D first-person shooter game.
+          <br>The game:
+          <ul class="gameDetails">
+              <li>Was built with the Unity game engine and the scripts were written in C#. </li>
+              <li>The game features 5 uniquely built levels, with a Boss enemy to defeat at the end.</li>
+              <li>The player was tasked with collecting key cards in levels while defeating enemies.</li>
+              <li>At the end of every level, the player's perfomance was analysed using the dynamic game balancing system I designed. </li>
+              <li>The AI-controlled enemies skillset would be alter during runtime depending on the player's performance.</li>
+              <li>The game used a Raycast shooting system, collision techniques and spawning methods. </li>
+              <li> A finite state machine model was designed and used to control the enemy’s animations and actions</li>
+              <li>File reading and writing was used to log player performances, keep track of high scores and update the player’s progress. </li>
+          </ul>
+
+          <div class="row">
+            <div class="column">
+              <img src="images/MainMenu.png" alt="Main Menu" style="width:100%">
+              Main Menu.
+            </div>
+            <div class="column">
+              <img src="images/Line of Sight.png" alt="Enemy" style="width:100%">
+              The enemy had a sensory system with their vision represented through the red cone.
+            </div>
+            <div class="column">
+              <img src="images/InGameUI.png" alt="Player POV" style="width:100%">
+              Player's point of view.
+            </div>
+          </div>
+
+          <h2>B.A.Final Year Project </h2>
+          For my final year of my undergraduate studies, students were paired up with fellow students to collarborate on a year long project.
+          <br> For my project, the title was "Software in Secondary Education". Both my fellow classmate, who I completed the project with, and I 
+          were also studying geograhy as a second subject in our B.A. degree. Therefore, it was decided that the software would revolve around geography.
+          <br> For the project, we:
+          <ul class="gameDetails">
+              <li>Created a web application that served as a resource to both students and teachers for the leaving cert geography curriculum. </li>
+              <li>Website was built using HTML, CSS, JavaScript and PHP.</li>
+              <li>A database stored teacher and student login details and scores. On first visit, the user had to create a password that would be required for further logins </li>
+              <li>The application allowed students to take several geography-based quizzes, viewing their past results and answers.</li>
+              <li>Teachers had access to view all their students results through a teacher login page, where results were retrieved from a database using php.</li>
+              <li>A 2D quiz game was also built using JavaScript and the Construct2 game engine to compare and contrast students experiences.</li>
+          </ul>
+
+
+          <h2>Euro 2020 Sweepstakes Generator</h2>
+          Java Swing was taught as the Java GUI framework when I was taking classes in university. To practice making GUIs with Swing, 
+          I decided to create an application that would randomly generate a pair that contained a person and a team competitng in the upcoming euros 2020/21.
+          <br>The application contains event listeners that allow the user to load a file up with people's names and a file containing all the team names.
+          <br>The application would parse the string contained in the files and stores the names of th epeople and teams in two separate arraylists.
+          <br>The lists would be sent to the gui window to be displayed after being passed through a StringBuffer. When the button to draw a name is clicked,
+          a method is called that randomly picks an index from the arraylist. The name is displayed in the center box on the gui and is removed from the arraylist and on screen list.
+          <br>When a pair is generated, it is written to a file that is created to store all the pairings. 
+
+          <div class="row">
+            <div class="column">
+              <img src="images/tg1.png" alt="Main Menu" style="width:100%">
+              Open files to import to application.
+            </div>
+            <div class="column">
+              <img src="images/tg2.png" alt="Enemy" style="width:100%">
+              Click button todraw name and team one by one.
+            </div>
+            <div class="column">
+              <img src="images/tg3.png" alt="Player POV" style="width:100%">
+              Names picked are removed and written to a file. When all teams are drawn, the button is disabled.
+            </div>
+          </div>
+
+
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
