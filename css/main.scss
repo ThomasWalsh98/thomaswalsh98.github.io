@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    background-color: silver;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+
+    div{
+        background-color: rgb(135, 206, 235);
+        height: 100vh;
+        transition: background-color 1s;
+    }
+
+}
+
+h1{
+    font-size: 5em;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.bio{
+    font-size: 1.5em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.buttons{
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.button{
+    background-color: rgb(135, 206, 235); 
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+}
