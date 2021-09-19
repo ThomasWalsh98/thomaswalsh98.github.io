@@ -14,16 +14,17 @@
     
     
     <h1>Thomas Walsh</h1>
+    <div class="circle">Learn More </div>
     <div class='bio'>
         <br>
         Msc. Software Design and Development, 
         <br>
         B.A. Information Technology & Geography
        <br>
-       Age: 22 &ensp; Location: Galway, Ireland. 
+       Age: 23 &ensp; Location: Galway, Ireland. 
        <br> <br>
        Software Developer with knowledge of  and experience with working with:
-       <br> Java, C#, Phython, Javascript, CSS, HTML, MySQL, and PHP.
+       <br> Java, C#, Phython, Javascript, CSS, HTML, SQL, and PHP.
 
        <br> <br>
        Email: tjw5898@gmail.com 
@@ -31,6 +32,7 @@
        <br> GitHub: <a href="https://github.com/ThomasWalsh98">ThomasWalsh98</a>
 
     </div>
+    
     <div class='buttons'>
         <p>
             <a href="Projects.html">
@@ -45,6 +47,7 @@
         </p>
 
     </div>
+    
 
     
 
@@ -109,6 +112,13 @@
             duration: 4000
         }, '-=1800')
 
+        tl.add({
+            targets: 'div.circle', 
+            top:'55%',
+            opacity: 1,
+            duration: 4000
+        }, '-=1600')
+
         
 
         let rotateMe = anime({
@@ -121,16 +131,27 @@
             autoplay: false
         })
 
+        let rotateCircle = anime({
+            targets: 'div.circle',
+            scaleY: '1',
+            scaleX: '1',
+            translateX: '5000%',
+            rotate:'45deg',
+            duration: 40000,
+            autoplay: false
+        })
+
         let showButtons = anime({
             targets: 'div.buttons',
-            top:'30%',
+            top:'33%',
             opacity: 1,
             duration: 4000,
             autoplay: false
         })
 
-        document.querySelector('.bio').addEventListener('mouseover', () => {
+        document.querySelector('.circle').addEventListener('mouseover', () => {
             rotateMe.play();
+            rotateCircle.play();
             showButtons.play();
         })
 
