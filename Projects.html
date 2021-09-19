@@ -10,13 +10,13 @@
 </head>
 <body>
     
-    <nav>
+    <nav class="sticky">
         <div class='hamburger'>
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" style="font-family: Cambria, Georgia, serif;">
             <li><a href="index.html">Thomas Walsh</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="Cv.html">CV</a></li>
@@ -42,7 +42,7 @@
 
     <section class="writing">
         
-        <h1>Projects</h1>
+        <h1 style="font-family: 'Lucida Console', Monaco, monospace;">PROJECTS</h1>
         During my time at university, I have completed modules in the following topics:
         <ul class="modules">
             <li>Databases</li>
@@ -62,10 +62,11 @@
           
           These modules resulted in me achieving knowldege in Java, Python and C#. Experience using maven and JSON data was also attained.
           <br> Web developing lessons thought me how to use HTML,CSS, JavaScript and RestApis. Node.js and mongoDB were also experienced. Frameworks such as jQuery, Bootstrap and anime.js helped design web pages. PHP was learnt to complete a group project.
-          <br> I have gained the skills required to analyse, manipulate and work with databases with mySQL.
+          <br> I have gained the skills required to analyse, manipulate and work with databases with SQL through mySQL and Microsoft Access.
           <br> The networks module has given me an ability to carry out Linux operations and create and run bash scripts.
 
-          <h2>Master’s Thesis: Vault Venture Video Game.</h2>
+
+          <h2 style="font-family: 'Lucida Console', Monaco, monospace;">Master’s Thesis: Vault Venture - AN FPS Video Game.</h2>
           As part of my postgraduate studies, I research video game developemnt and wrote a thesis about the impact of
           dynamic game balancing in video games. To test the hypothesis that dynamic game balancing improves the player's gaming experience
           by matching their ability to the game's difficulty setting, I fully developed a 3D first-person shooter game.
@@ -81,22 +82,78 @@
               <li>File reading and writing was used to log player performances, keep track of high scores and update the player’s progress. </li>
           </ul>
 
-          <div class="row">
-            <div class="column">
-              <img src="images/MainMenu.png" alt="Main Menu" style="width:100%">
-              Main Menu.
+          
+
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 10</div>
+                <img class ="imgCaption" src="images/MainMenu.png" style="width:100%" alt="Main Menu">
             </div>
-            <div class="column">
-              <img src="images/Line of Sight.png" alt="Enemy" style="width:100%">
-              The enemy had a sensory system with their vision represented through the red cone.
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 10</div>
+                <img class ="imgCaption" src="images/Line of Sight.png" style="width:100%" alt="NPC Line of Sight">
             </div>
-            <div class="column">
-              <img src="images/InGameUI.png" alt="Player POV" style="width:100%">
-              Player's point of view.
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 10</div>
+                <img class ="imgCaption" src="images/AnimatorController.png" style="width:100%" alt="NPC Animator Controller">
             </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 10</div>
+                <img class ="imgCaption" src="images/InGameUI.png" style="width:100%" alt="In game player's UI">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 10</div>
+                <img class ="imgCaption" src="images/EndMenu.png" style="width:100%" alt="End Menu">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 10</div>
+                <img class ="imgCaption" src="images/level1.png" style="width:100%" alt="Level 1 Map">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 10</div>
+                <img class ="imgCaption" src="images/level2.png" style="width:100%" alt="Level 2 Map">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 10</div>
+                <img class ="imgCaption" src="images/level3.png" style="width:100%" alt="Level 3 Map">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">9 / 10</div>
+                <img class ="imgCaption" src="images/level4.png" style="width:100%" alt="Level 4 Map">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">10 / 10</div>
+                <img class ="imgCaption" src="images/level5.png" style="width:100%" alt="Level 5 Map">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            
           </div>
 
-          <h2>B.A.Final Year Project </h2>
+
+
+
+          <h2 style="font-family: 'Lucida Console', Monaco, monospace;">B.A.Final Year Project - Secondary Education Geography Aid Tool </h2>
           For my final year of my undergraduate studies, students were paired up with fellow students to collarborate on a year long project.
           <br> For my project, the title was "Software in Secondary Education". Both my fellow classmate, who I completed the project with, and I 
           were also studying geograhy as a second subject in our B.A. degree. Therefore, it was decided that the software would revolve around geography.
@@ -111,29 +168,51 @@
           </ul>
 
 
-          <h2>Euro 2020 Sweepstakes Generator</h2>
+          <h2 style="font-family: 'Lucida Console', Monaco, monospace;">Java Swing Project - Euro 2020 Sweepstakes Generator</h2>
           Java Swing was taught as the Java GUI framework when I was taking classes in university. To practice making GUIs with Swing, 
           I decided to create an application that would randomly generate a pair that contained a person and a team competitng in the upcoming euros 2020/21.
           <br>The application contains event listeners that allow the user to load a file up with people's names and a file containing all the team names.
           <br>The application would parse the string contained in the files and stores the names of th epeople and teams in two separate arraylists.
-          <br>The lists would be sent to the gui window to be displayed after being passed through a StringBuffer. When the button to draw a name is clicked,
+          <br>The lists would be sent to the GUI window to be displayed after being passed through a StringBuffer. When the button to draw a name is clicked,
           a method is called that randomly picks an index from the arraylist. The name is displayed in the center box on the gui and is removed from the arraylist and on screen list.
           <br>When a pair is generated, it is written to a file that is created to store all the pairings. 
 
-          <div class="row">
-            <div class="column">
-              <img src="images/tg1.png" alt="Main Menu" style="width:100%">
-              Open files to import to application.
+          
+
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides2">
+              <div class="numbertext">1 / 3</div>
+                <img class ="imgCaption2" src="images/tg1.png" style="width:100%" alt="Open files to import to application.">
             </div>
-            <div class="column">
-              <img src="images/tg2.png" alt="Enemy" style="width:100%">
-              Click button todraw name and team one by one.
+
+            <div class="mySlides2">
+              <div class="numbertext">2 / 3</div>
+                <img class ="imgCaption2" src="images/tg2.png" style="width:100%" alt="Click button to draw name and team one by one.">
             </div>
-            <div class="column">
-              <img src="images/tg3.png" alt="Player POV" style="width:100%">
-              Names picked are removed and written to a file. When all teams are drawn, the button is disabled.
+
+            <div class="mySlides2">
+              <div class="numbertext">3 / 3</div>
+                <img class ="imgCaption2" src="images/tg3.png" style="width:100%" alt="Names picked are removed and written to a file. When all teams are drawn, the button is disabled.">
             </div>
+
+            
+
+            <!-- Next and previous buttons -->
+            <a class="prev" style="color: black;" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" style="color: black;" onclick="plusSlides2(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption2"></p>
+            </div>
+
           </div>
+
+
+
 
 
     </section>
