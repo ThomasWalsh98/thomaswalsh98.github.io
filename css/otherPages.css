@@ -104,7 +104,7 @@ nav {
   }
 
   .imgCaption2 {
-    display: block;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
