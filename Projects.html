@@ -168,15 +168,47 @@
           </ul>
 
 
-          <h2 style="font-family: 'Lucida Console', Monaco, monospace;">Java Swing Project - Euro 2020 Sweepstakes Generator</h2>
+          <h2 style="font-family: 'Lucida Console', Monaco, monospace;">Java Swing Projects</h2>
+          <p style="font-family: 'Lucida Console', Monaco, monospace;"><b><font size="+2">Euro 2020 Sweepstakes Generator</font></b></p>
           Java Swing was taught as the Java GUI framework when I was taking classes in university. To practice making GUIs with Swing, 
           I decided to create an application that would randomly generate a pair that contained a person and a team competitng in the upcoming euros 2020/21.
-          <br>The application contains event listeners that allow the user to load a file up with people's names and a file containing all the team names.
-          <br>The application would parse the string contained in the files and stores the names of th epeople and teams in two separate arraylists.
-          <br>The lists would be sent to the GUI window to be displayed after being passed through a StringBuffer. When the button to draw a name is clicked,
-          a method is called that randomly picks an index from the arraylist. The name is displayed in the center box on the gui and is removed from the arraylist and on screen list.
-          <br>When a pair is generated, it is written to a file that is created to store all the pairings. 
+          <ul class = "gameDetails">
+            <li>The application used the borderlayout manager. This allowed for elements to be positioned independently in the north, south, east, and west sections of the window. 
+              People were placed on the left and teams on the right, allowing for the center to be used as the position to show the results drawn.
+              The south component was occupied with the button for the user's interaction.
+            </li>
+            <li>The application contains event listeners that allow the user to load a file up with people's names and a file containing all the team names.</li>
+            <li>The application would parse the string contained in the files and stores the names of th epeople and teams in two separate arraylists.</li>
+            <li>The lists would be sent to the GUI window to be displayed after being passed through a StringBuffer. When the button to draw a name is clicked,
+              a method is called that randomly picks an index from the arraylist. The name is displayed in the center box on the gui and is removed from the arraylist and on screen list.</li>
+            <li>When a pair is generated, it is written to a file that is created to store all the pairings. </li>
+          </ul>
+          
+          <p style="font-family: 'Lucida Console', Monaco, monospace;"><b><font size="+2">Time Calculator</font></b></p>
+          When collecting data for my thesis project, I frequently needed to manipulate time data. I discovered that 
+          online resources were not sufficient and therefore I created my own application to carry out the work. Furthermore, I 
+          then decided to create a swing application to manipulate time data for future references.
+          <ul class = "gameDetails">
+            <li>Java Swing has multiple layout managaers. This time I used the FlowLayout manager to postion all the elements of the calculator on rows. </li>
+            <li>The time calculator uses textboxes that the user can enter the number of minutes and number of seconds into. </li>
+            <li>The GUI window contains a togglebox of four buttons that represent the functions that can be carried out (add, subtract, mulitply, divide).</li>
+            <li>The chosen togglebutton is highlighted to visually show the user the seledcted calculation. The togglebuttons are also eventlisteners that sets a variable in the code that is passed as a paramaeter so the correct method is called in the program.</li>
+            <li>The time calculator allows for two times to be added or subracted from them other. </li>
+            <li>It allows for one time to be mulitplied or be divided by a number entered by the user.</li>
+            <li>A try catch statement is used to check to see if a valid number is entered into the textboxes. If an invalid input is detected, a popup box with a warning is displayed and the textboxes are reset. </li>
+            <li>A clear button and result button are also eventlisteners that call methods. </li>
+            <li>The clear button simplies resets the textboxes.</li>
+            <li>The result button takes in the numbers entered as parameters and performs the corresponding method. The result is then returned.</li>
+          </ul>
+          <ul class= "gameDetails">
+            <li>The time calculator also contains a button to access a "normal calculator".</li>
+            <li>When clicked, a method to close the current GUI window is called, and a new Java Swing generated window is created that resembles a normal calculator.</li>
+            <li>This calculator works as a basic calculator, with addition, subtraction, multiplication and division functions.</li>
+            <li>Rather than textboxes, users enter numbers through the use of buttons that are all eventlisteners.</li>
+            <li>The user's prompt is displayed on the top textbox and the result is calculated when the user presses equal.</li>
 
+          </ul>
+          
           
 
           <!-- Container for the image gallery -->
@@ -184,18 +216,38 @@
 
             <!-- Full-width images with number text -->
             <div class="mySlides2">
-              <div class="numbertext">1 / 3</div>
+              <div class="numbertext">1 / 7</div>
                 <img class ="imgCaption2" src="images/tg1.png" style="width:100%" alt="Open files to import to application.">
             </div>
 
             <div class="mySlides2">
-              <div class="numbertext">2 / 3</div>
+              <div class="numbertext">2 / 7</div>
                 <img class ="imgCaption2" src="images/tg2.png" style="width:100%" alt="Click button to draw name and team one by one.">
             </div>
 
             <div class="mySlides2">
-              <div class="numbertext">3 / 3</div>
+              <div class="numbertext">3 / 7</div>
                 <img class ="imgCaption2" src="images/tg3.png" style="width:100%" alt="Names picked are removed and written to a file. When all teams are drawn, the button is disabled.">
+            </div>
+
+            <div class="mySlides2">
+              <div class="numbertext">4 / 7</div>
+                <img class ="imgCaption2" src="images/tc1.png"  alt="Numbers are entered into textboxes and an operation (+) is called and a result is displayed.">
+            </div>
+
+            <div class="mySlides2">
+              <div class="numbertext">5 / 7</div>
+                <img class ="imgCaption2" src="images/tc2.png"  alt="When multiplying, the second input changes from minutes and seconds to asking for a factor to be inputed.">
+            </div>
+
+            <div class="mySlides2">
+              <div class="numbertext">6 / 7</div>
+                <img class ="imgCaption2" src="images/tc3.png"  alt="A invalid input was entered, prompting a display message to inform the user.">
+            </div>
+
+            <div class="mySlides2">
+              <div class="numbertext">7 / 7</div>
+                <img class ="imgCaption2" src="images/tc4.png"  alt="The normal caluclator accessed via the time calculator.">
             </div>
 
             
